@@ -23,8 +23,36 @@ p {
   text-align: center;
   line-height: 30px;
 }
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 35px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--branding-color);
+  transition: all 100ms ease-in-out;
+  font-family: var(--default-font-family);
+}
+nav a:hover,
+nav li .active a {
+  color: var(--btn-color);
+}
+nav li .active a {
+  color: var(--btn-color);
+}
+
 .section-container {
-  padding: 100px 20px;
+  padding: 65px 25px;
 }
 .section-container h1 {
   font-size: 64px;
@@ -108,6 +136,11 @@ p {
   text-align: center;
 }
 
+.portfolio-logo {
+  width: 80px;
+  max-height: 80px;
+}
+
 @media (max-width: 900px) {
   .project-description {
     padding: 0;
@@ -137,5 +170,8 @@ p {
   }
   h2 {
     font-size: 42px;
+  }
+  nav a {
+    font-size: 15px;
   }
 }
