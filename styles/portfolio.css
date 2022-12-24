@@ -1,6 +1,7 @@
 :root {
   --branding-color: #272142;
   --btn-color: #6c63ff;
+  --background-color: #f9f7fe;
   --headings-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -42,6 +43,7 @@ nav a {
   color: var(--branding-color);
   transition: all 100ms ease-in-out;
   font-family: var(--default-font-family);
+  font-weight: medium;
 }
 nav a:hover,
 nav li .active a {
@@ -100,7 +102,7 @@ nav li .active a {
 
 .hero {
   text-align: center;
-  background: #f9f7fe;
+  background: var(--background-color);
   padding: 160px 20px;
 }
 .hero p {
@@ -139,20 +141,63 @@ nav li .active a {
 .portfolio-logo {
   width: 80px;
   max-height: 80px;
+  margin-right: 10px;
+}
+.contact-section {
+  background: var(--background-color);
+  padding: 40px 70px;
+  border-radius: 10px;
 }
 
-@media (max-width: 900px) {
+.contact-section p {
+  margin: 0%;
+}
+.contact-section h3 {
+  font-size: 46px;
+  font-family: var(--headings-font-family);
+}
+footer {
+  margin: 40px;
+}
+
+footer .email-link {
+  text-decoration: none;
+  font-family: var(--default-font-family);
+  font-size: 25px;
+  color: var(--branding-color);
+  transition: all 100ms ease ease-in-out;
+  margin-bottom: 40px;
+}
+
+footer .email-link:hover {
+  color: var(--btn-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--btn-color);
+  font-size: 30px;
+  border-radius: 45%;
+  padding: 6px 10px;
+  transition: all 80ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background: var(--btn-color);
+}
+@media (max-width: 850px) {
   .project-description {
     padding: 0;
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
   }
   .work-project-description {
     margin-left: 70px;
   }
 
   .work-project-description h3 {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .work-project-description p {
@@ -165,11 +210,14 @@ nav li .active a {
   .hero {
     padding: 70px 18px;
   }
+  footer.email-link {
+    font-size: 20px;
+  }
   h1 {
-    font-size: 60px;
+    font-size: 50px;
   }
   h2 {
-    font-size: 42px;
+    font-size: 35px;
   }
   nav a {
     font-size: 15px;
