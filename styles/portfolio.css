@@ -45,14 +45,12 @@ nav a {
   font-family: var(--default-font-family);
   font-weight: medium;
 }
-nav a:hover,
-nav li .active a {
+nav a:hover {
   color: var(--btn-color);
 }
-nav li .active a {
+nav li.active a {
   color: var(--btn-color);
 }
-
 .section-container {
   padding: 65px 25px;
 }
@@ -70,8 +68,9 @@ nav li .active a {
 .section-container img {
   border-radius: 20px;
   width: 650px;
-  max-width: 85%;
+  max-width: 80%;
   margin-top: 35px;
+  padding: 0%;
 }
 .section-container p {
   font-family: var(--default-font-family);
@@ -99,11 +98,13 @@ nav li .active a {
 .work-project-description {
   margin-right: 100px;
 }
-
+.logo img {
+  max-width: 100px;
+}
 .hero {
   text-align: center;
   background: var(--background-color);
-  padding: 160px 20px;
+  padding: 100px 20px;
 }
 .hero p {
   font-family: var(--default-font-family);
@@ -138,11 +139,6 @@ nav li .active a {
   text-align: center;
 }
 
-.portfolio-logo {
-  width: 80px;
-  max-height: 80px;
-  margin-right: 10px;
-}
 .contact-section {
   background: var(--background-color);
   padding: 40px 70px;
@@ -206,6 +202,10 @@ footer .social-links a:hover {
   .section-container {
     text-align: center;
     padding: 0;
+  }
+
+  .section-container a {
+    font-size: 21px;
   }
   .hero {
     padding: 70px 18px;

@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Oluchi is a front-end developer based in Nigeria"
+    />
+    <title>Front-end developer,Oluchi Joan Ukaigwe</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,41 +33,47 @@
     <link rel="stylesheet" href="styles/portfolio.css" />
   </head>
   <body>
-
-
- <div class="section-container"></div>
-      <nav class="d-flex justify-content-between"> 
-        <img src="images/logo.jpg" class="portfolio-logo d-none d-md-block" alt="" />
+    <div class="section-container">
+      <nav class="d-flex justify-content-between">
+        <div class="logo">
+          <img src="images/logo.jpg" class="d-none d-lg-block" alt="" />
+        </div>
         <ul>
           <li class="active">
-            <a href="index.html"> Home</a>
-            </li>
-          <li>
-          <a href="about.html">About</a>
-        </li>
-          <li>
-            <a href="work.html">Work</a>
+            <a href="index.html" title="Homepage"> Home</a>
           </li>
           <li>
-            <a href="contact.html">Contact</a>
+            <a href="about.html" title="About Oluchi">About</a>
+          </li>
+          <li>
+            <a href="work.html" title=" Oluchi's Work">Work</a>
+          </li>
+          <li>
+            <a href="contact.html" title="Contact Oluchi">Contact</a>
           </li>
         </ul>
       </nav>
-         </div>
-    
+    </div>
+
     <div class="hero">
       <p>👋🏽Hi I am</p>
       <h1>Oluchi Joan Ukaigwe</h1>
       <h2 class="mb-5">Front-end web developer based in Nigeria</h2>
       <div>
-        <a href="#" class="btn btn-branding">Contact Me</a>
+        <a href="contact.html" class="btn btn-branding" title="contact Oluchi"
+          >Contact Me</a
+        >
       </div>
     </div>
     <p class="text-center m-4">Some of my featured projects</p>
     <div class="container">
       <div class="row mb-5">
         <div class="col d-none d-lg-block">
-          <img src="images/yoga.png" alt="" class="img-fluid" />
+          <img
+            src="images/yoga.png"
+            alt="yoga project preview"
+            class="img-fluid"
+          />
         </div>
         <div class="col">
           <h2 class="mb-4 text-center">Yoga Project</h2>
@@ -76,74 +86,106 @@
               emotions, or the things you are doing in your life—your work, your
               hobbies, your relationships.
             </p>
-            <a href="#" class="btn btn-branding-outline">Learn More</a>
+            <a href="work.html" class="btn btn-branding-outline">Learn More</a>
           </div>
         </div>
       </div>
 
       <div class="row mb-5">
         <div class="col d-none d-lg-block">
-          <img src="images/weather.png" alt="" class="img-fluid" />
+          <img
+            src="images/weather.png"
+            alt="weather app preview"
+            class="img-fluid"
+          />
         </div>
         <div class="col">
           <h2 class="mb-4 text-center">Weather App</h2>
           <div class="project-description">
             <p class="text-muted">
-              The weather app also provides atmospheric pressure, weather conditions, visibility distance, relative humidity, precipitation in different unites, dew point, wind speed and direction
+              The weather app also provides atmospheric pressure, weather
+              conditions, visibility distance, relative humidity, precipitation
+              in different unites, dew point, wind speed and direction
             </p>
-            <a href="#" class="btn btn-branding-outline">Learn More</a>
+            <a href="work.html" class="btn btn-branding-outline">Learn More</a>
           </div>
         </div>
       </div>
 
       <div class="row mb-5">
         <div class="col d-none d-lg-block">
-          <img src="images/yogurt.png" alt="" class="img-fluid" />
+          <img
+            src="images/yogurt.png"
+            alt="yogurt project preview"
+            class="img-fluid"
+          />
         </div>
         <div class="col">
           <h2 class="mb-5 text-center">Yogurt Project</h2>
           <div class="project-description">
             <p class="text-muted">
-              yogurt, also spelled yoghurt, yourt, or yoghourt, semifluid fermented milk food having a smooth texture and mildly sour flavour because of its lactic acid content. Yogurt may be made from the milk of cows, sheep, goats, or water buffalo
+              yogurt, also spelled yoghurt, yourt, or yoghourt, semifluid
+              fermented milk food having a smooth texture and mildly sour
+              flavour because of its lactic acid content. Yogurt may be made
+              from the milk of cows, sheep, goats, or water buffalo
             </p>
-            <a href="#" class="btn btn-branding-outline">Learn More</a>
+            <a href="work.html" class="btn btn-branding-outline">Learn More</a>
           </div>
         </div>
       </div>
 
-  <footer>
+      <footer>
+        <div
+          class="contact-section d-flex justify-content-between m-5 d-none d-md-flex"
+        >
+          <div>
+            <h3>Work Inquiry</h3>
 
-    <div class="contact-section d-flex justify-content-between m-5 d-none d-md-flex">
-      <div>  
-      <h3>
-        Work Inquiry
-      </h3>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
+            <a
+              href="contact.html"
+              class="btn btn-branding"
+              title="Talk to Oluchi"
+              >Let's talk here</a
+            >
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <a
+            href="mailto:ukaigwej19@gmail.com"
+            class="email-link"
+            title="email Oluchi"
+            >ukaigwej19@gmail.com</a
+          >
+        </div>
+        <div class="social-links d-flex justify-content-center mb-5">
+          <a
+            href="https://github.com/OluchiJoan"
+            target="_blank"
+            title="Github account"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
 
-      <p class="text-muted">
-        Let's work together
-      </p>
-       </div>
-       <div>  
-      <a href="" class="btn btn-branding">Let's talk here</a>
-    </div>
-     </div>
-    <div class="d-flex justify-content-center mb-5 ">   
-    <a href="mailto:ukaigwej19@gmail.com" class="email-link">ukaigwej19@gmail.com</a>
- </div>
-    <div class="social-links d-flex justify-content-center mb-5">
-      <a href="https://github.com/OluchiJoan" target="_blank">
-      <i class="fa-brands fa-github"></i>
-    </a> 
-    
-      <a href="https://www.instagram.com/orluuchy/" target="_blank">
-       <i class="fa-brands fa-square-instagram"></i>
-    </a>  
+          <a
+            href="https://www.instagram.com/orluuchy/"
+            target="_blank"
+            title="Instagram account"
+          >
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
 
-      <a href="https://web.facebook.com/oluchi.joan.754" target="_blank">
-         <i class="fa-brands fa-facebook"></i>
-    </a>  
-     </div>
-  </footer>
+          <a
+            href="https://web.facebook.com/oluchi.joan.754"
+            target="_blank"
+            title="facebook account"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
